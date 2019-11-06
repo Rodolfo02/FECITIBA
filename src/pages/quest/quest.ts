@@ -23,10 +23,14 @@ export class QuestPage {
   }
 
   nextPage () {
+
+    const animationsOptions = {
+      animation: 'ios-transition'
+    }
     
     this.navCtrl.push(Quest2Page, {
       resposta1: this.bioForm.value.quest
-    });
+    }, animationsOptions);
   }
 
 }

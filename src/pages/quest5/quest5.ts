@@ -32,13 +32,18 @@ export class Quest5Page {
   }
 
   nextPage() {
+
+    const animationsOptions = {
+      animation: 'ios-transition'
+    }
+
     this.navCtrl.push(Quest6Page, {
       resposta1: this.resposta1,
       resposta2: this.resposta2,
       resposta3: this.resposta3,
       resposta4: this.resposta4,
       resposta5: this.bioForm.value.quest5
-    })
+    }, animationsOptions)
   }
 
 }

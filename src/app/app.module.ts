@@ -17,6 +17,7 @@ import { Quest7Page } from '../pages/quest7/quest7';
 import { Quest8Page } from '../pages/quest8/quest8';
 import { Quest9Page } from '../pages/quest9/quest9';
 import { Quest10Page } from '../pages/quest10/quest10';
+import { CreditosPage } from '../pages/creditos/creditos';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { Quest10Page } from '../pages/quest10/quest10';
     Quest8Page,
     Quest9Page,
     Quest10Page,
-    ResultadoPage
+    ResultadoPage,
+    CreditosPage
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ import { Quest10Page } from '../pages/quest10/quest10';
     Quest8Page,
     Quest9Page,
     Quest10Page,
-    ResultadoPage
+    ResultadoPage,
+    CreditosPage
   ],
   providers: [
     StatusBar,

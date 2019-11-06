@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FormBuilder, Validators } from '@angular/forms';
-import { ResultadoPage } from '../resultado/resultado';
+import { Quest9Page } from '../quest9/quest9';
 
 @IonicPage()
 @Component({
@@ -36,7 +36,12 @@ export class Quest8Page {
   }
 
   nextPage() {
-    this.navCtrl.push(ResultadoPage, {
+
+    const animationsOptions = {
+      animation: 'ios-transition'
+    }
+
+    this.navCtrl.push(Quest9Page, {
       resposta1: this.resposta1,
       resposta2: this.resposta2,
       resposta3: this.resposta3,
@@ -45,7 +50,7 @@ export class Quest8Page {
       resposta6: this.resposta6,
       resposta7: this.resposta7,
       resposta8: this.bioForm.value.quest8
-    })
+    }, animationsOptions)
   }
 
 }

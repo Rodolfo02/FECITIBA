@@ -34,6 +34,11 @@ export class Quest7Page {
   }
 
   nextPage() {
+
+    const animationsOptions = {
+      animation: 'ios-transition'
+    }
+
     this.navCtrl.push(Quest8Page, {
       resposta1: this.resposta1,
       resposta2: this.resposta2,
@@ -42,7 +47,7 @@ export class Quest7Page {
       resposta5: this.resposta5,
       resposta6: this.resposta6,
       resposta7: this.bioForm.value.quest7
-    })
+    }, animationsOptions)
   }
 
 }

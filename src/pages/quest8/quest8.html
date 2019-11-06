@@ -9,30 +9,47 @@
     <form [formGroup]="bioForm" (ngSubmit)="nextPage()">
         <ion-list radio-group formControlName="quest8">
       
-            <ion-list-header text-wrap color="light">
-              A teníase é causada pelo verme?
+            <ion-list-header class="justify" text-wrap color="light">
+              Dentre as doenças humanas causadas por protozoários, estão a amebíase e a giardíase. 
+              Assinale a alternativa que mostra aspectos comuns a essas duas enfermidades.
             </ion-list-header>
+
+            <img class="center" padding src="assets/quest/quest8.jpg"/>
         
             <ion-item>
-              <ion-label text-wrap>
-                Taenia solium e Taenia saginata 
+              <ion-label class="justify" text-wrap>
+                Têm como forma de contágio a ingestão de água e alimentos contaminados. 
               </ion-label>
               <ion-radio value="um"></ion-radio>
             </ion-item>
         
             <ion-item>
-              <ion-label text-wrap>
-                Necator americanus          
+              <ion-label class="justify" text-wrap>
+                São causadas por protozoários do gênero “Entamoeba”.         
               </ion-label>
               <ion-radio value="dois"></ion-radio>
             </ion-item>
         
             <ion-item>
-              <ion-label text-wrap>
-                Schistosoma mansoni
+              <ion-label class="justify" text-wrap>
+                Causam ulcerações graves na pele, principalmente no rosto, nos braços e nas pernas.
               </ion-label>
               <ion-radio value="tres"></ion-radio>
             </ion-item>
+
+            <ion-item>
+              <ion-label class="justify" text-wrap>
+                Requerem como medida preventiva, evitar o uso direto de sanitários públicos. 
+              </ion-label>
+              <ion-radio value="quatro"></ion-radio>
+            </ion-item>
+
+              <ion-item>
+                <ion-label class="justify" text-wrap>
+                  Apresentam como sintomas: diarreias e lesões na parede intestinal.
+                </ion-label>
+                <ion-radio value="cinco"></ion-radio>
+              </ion-item>
         
           </ion-list>
         

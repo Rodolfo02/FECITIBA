@@ -32,8 +32,8 @@ export class ResultadoPage {
     this.resposta6 = this.navParams.data.resposta6;
     this.resposta7 = this.navParams.data.resposta7;
     this.resposta8 = this.navParams.data.resposta8;
-    //this.resposta9 = this.navParams.data.resposta9;
-    //this.resposta10 = this.navParams.data.resposta10;
+    this.resposta9 = this.navParams.data.resposta9;
+    this.resposta10 = this.navParams.data.resposta10;
 
   }
 
@@ -62,12 +62,12 @@ export class ResultadoPage {
     if (this.resposta8 == "um"){
       this.pontuacao++
     };
-    /*if (this.resposta9 == "dois"){
+    if (this.resposta9 == "dois"){
       this.pontuacao++
     };
     if (this.resposta10 == "dois"){
       this.pontuacao++
-    };*/
+    };
   }
 
   goHome(){

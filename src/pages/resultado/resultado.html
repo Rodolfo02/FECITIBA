@@ -6,9 +6,17 @@
 
 <ion-content no-padding>
 
-    <img padding src="assets/parabens.jpg"/>
+    <div *ngIf="pontuacao <= 5">
+      <img padding src="assets/good.jpg"/>
+    </div>
 
-    <h1 class="titulo">Resultado: {{pontuacao}}/8</h1>
+    <div *ngIf="pontuacao >= 6">
+      <img padding src="assets/parabens.jpg"/>
+    </div>
+
+    <ion-item no-lines>
+      <h1 class="titulo">Resultado: {{pontuacao}}/10</h1>
+    </ion-item>
 
     <button ion-button block (click)="goHome()">Refazer</button>
 </ion-content>
