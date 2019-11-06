@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Questão 4</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+
+    <form [formGroup]="bioForm" (ngSubmit)="nextPage()">
+        <ion-list radio-group formControlName="quest4">
+      
+            <ion-list-header text-wrap color="light">
+              Os parasitas podem ser:
+            </ion-list-header>
+        
+            <ion-item>
+              <ion-label text-wrap>
+                Vermes, bactérias, vírus, protozoários 
+              </ion-label>
+              <ion-radio value="um"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label text-wrap>
+                Somente vermes            
+              </ion-label>
+              <ion-radio value="dois"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label text-wrap>
+                Vermes e Protozoários
+              </ion-label>
+              <ion-radio value="tres"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label text-wrap>
+                Bactérias  
+              </ion-label>
+              <ion-radio value="quatro"></ion-radio>
+            </ion-item>
+        
+          </ion-list>
+        
+          <button ion-button block [disabled]="!bioForm.valid" type="submit">Próximo</button>
+    </form>
+
+</ion-content>

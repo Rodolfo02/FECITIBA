@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Questão 1</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+
+  <form [formGroup]="bioForm" (ngSubmit)="nextPage()">
+      <ion-list radio-group formControlName="quest">
+    
+          <ion-list-header color="light" text-wrap>
+            Qual o nome científico do causador da Esquistossomose:
+          </ion-list-header>
+      
+          <img padding src="assets/quest/mansoni.jpg"/>
+      
+          <ion-item>
+            <ion-label text-wrap>
+              Taenia Soluim 
+            </ion-label>
+            <ion-radio value="um"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label text-wrap>
+              Ascaris Lumbricóides             
+            </ion-label>
+            <ion-radio value="dois"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label text-wrap>
+              Tricuris Trichiura 
+            </ion-label>
+            <ion-radio value="tres"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label text-wrap>
+              Schistosoma Mansoni  
+            </ion-label>
+            <ion-radio value="quatro"></ion-radio>
+          </ion-item>
+      
+        </ion-list>
+
+        <button ion-button block [disabled]="!bioForm.valid" type="submit">Próximo</button>
+  </form>
+
+</ion-content>

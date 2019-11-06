@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Questão 2</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+
+    <form [formGroup]="bioForm" (ngSubmit)="nextPage()">
+        <ion-list radio-group formControlName="quest2">
+      
+            <ion-list-header text-wrap color="light">
+              Qual destas doenças não é transmitida pela água?
+            </ion-list-header>
+        
+            <ion-item>
+              <ion-label text-wrap>
+                Amebíase 
+              </ion-label>
+              <ion-radio value="um"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label text-wrap>
+                Giardíase             
+              </ion-label>
+              <ion-radio value="dois"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label text-wrap>
+                Hepatite A 
+              </ion-label>
+              <ion-radio value="tres"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label text-wrap>
+                Doença de Chagas  
+              </ion-label>
+              <ion-radio value="quatro"></ion-radio>
+            </ion-item>
+        
+          </ion-list>
+        
+          <button ion-button block [disabled]="!bioForm.valid" type="submit">Próximo</button>
+    </form>
+
+</ion-content>
